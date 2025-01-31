@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Our Team</title>
+    <title>SNU FINTECH AI 10th - Team7</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,25 +13,28 @@
             color: #333;
         }
 
-        .team-container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .header {
+            background-color: #007BFF;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
 
-        .team-header {
-            margin-bottom: 40px;
-        }
-
-        .team-header h1 {
-            font-size: 2.5rem;
+        .header h1 {
             margin: 0;
+            font-size: 2rem;
         }
 
-        .team-header p {
-            font-size: 1rem;
-            color: #666;
+        .header h2 {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
         }
 
         .team-grid {
@@ -72,48 +75,42 @@
             margin: 10px 0 20px;
         }
 
-        .social-icons {
+        .pagination {
+            margin: 20px 0;
             display: flex;
             justify-content: center;
             gap: 10px;
         }
 
-        .social-icons a {
+        .pagination a {
             text-decoration: none;
-            color: #333;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
             color: #007BFF;
+            border: 1px solid #007BFF;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        .team-member a {
-            text-decoration: none;
-            color: inherit;
+        .pagination a:hover {
+            background-color: #007BFF;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <div class="team-container">
-        <div class="team-header">
-            <h1>Meet Our Team</h1>
-            <p>Just take a look - each member of the team is watching your every gesture and will hear your every whisper.</p>
-        </div>
+    <div class="header">
+        <h1>SNU FINTECH AI 10th</h1>
+        <h2>Team7</h2>
+    </div>
 
+    <div class="team-container">
         <div class="team-grid">
             <div class="team-member">
-                <a href="member1.html">
+                <a href="team_leader.html">
                     <img src="https://via.placeholder.com/250" alt="Amanda Fisher">
                     <div class="team-member-content">
                         <h3>Amanda Fisher</h3>
-                        <p>Insert your title here</p>
-                        <div class="social-icons">
-                            <a href="#">✔️</a>
-                            <a href="#">🎤</a>
-                            <a href="#">📧</a>
-                        </div>
+                        <p>Team Leader</p>
                     </div>
                 </a>
             </div>
@@ -124,11 +121,6 @@
                     <div class="team-member-content">
                         <h3>Mike Cannon</h3>
                         <p>Insert your title here</p>
-                        <div class="social-icons">
-                            <a href="#">✔️</a>
-                            <a href="#">🎤</a>
-                            <a href="#">📧</a>
-                        </div>
                     </div>
                 </a>
             </div>
@@ -139,11 +131,6 @@
                     <div class="team-member-content">
                         <h3>Erika Gofas</h3>
                         <p>Insert your title here</p>
-                        <div class="social-icons">
-                            <a href="#">✔️</a>
-                            <a href="#">🎤</a>
-                            <a href="#">📧</a>
-                        </div>
                     </div>
                 </a>
             </div>
@@ -154,11 +141,6 @@
                     <div class="team-member-content">
                         <h3>Scott Beer</h3>
                         <p>Insert your title here</p>
-                        <div class="social-icons">
-                            <a href="#">✔️</a>
-                            <a href="#">🎤</a>
-                            <a href="#">📧</a>
-                        </div>
                     </div>
                 </a>
             </div>
@@ -169,29 +151,28 @@
                     <div class="team-member-content">
                         <h3>Ivanna Drian</h3>
                         <p>Insert your title here</p>
-                        <div class="social-icons">
-                            <a href="#">✔️</a>
-                            <a href="#">🎤</a>
-                            <a href="#">📧</a>
-                        </div>
                     </div>
                 </a>
             </div>
 
             <div class="team-member">
-                <a href="member6.html">
-                    <img src="https://via.placeholder.com/250" alt="Pevinna Summer">
+                <a href="team_leader.html">
+                    <img src="https://via.placeholder.com/250" alt="Amanda Fisher">
                     <div class="team-member-content">
-                        <h3>Pevinna Summer</h3>
-                        <p>Insert your title here</p>
-                        <div class="social-icons">
-                            <a href="#">✔️</a>
-                            <a href="#">🎤</a>
-                            <a href="#">📧</a>
-                        </div>
+                        <h3>Amanda Fisher</h3>
+                        <p>Team Leader</p>
                     </div>
                 </a>
             </div>
+        </div>
+
+        <div class="pagination">
+            <a href="team_leader.html">1</a>
+            <a href="member2.html">2</a>
+            <a href="member3.html">3</a>
+            <a href="member4.html">4</a>
+            <a href="member5.html">5</a>
+            <a href="team_leader.html">6</a>
         </div>
     </div>
 </body>
