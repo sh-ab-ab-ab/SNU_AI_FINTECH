@@ -3,103 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Service Planner</title>
+    <title>Meet Our Team</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background-color: #f9f9f9;
             color: #333;
-            background: #f9f9f9;
         }
-        header {
-            background: #4CAF50;
-            color: #fff;
-            padding: 1rem 0;
+
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
+
+        .team-header {
+            margin-bottom: 40px;
+        }
+
+        .team-header h1 {
             font-size: 2.5rem;
+            margin: 0;
         }
-        header p {
-            margin: 0.5rem 0;
+
+        .team-header p {
+            font-size: 1rem;
+            color: #666;
         }
-        nav {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 0.5rem;
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
+
+        .team-member {
             background: #fff;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
         }
-        section h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
+
+        .team-member:hover {
+            transform: translateY(-5px);
         }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #333;
-            color: #fff;
-            margin-top: 1rem;
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+        }
+
+        .team-member-content {
+            padding: 20px;
+        }
+
+        .team-member h3 {
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #777;
+            margin: 10px 0 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #007BFF;
+        }
+
+        .team-member a {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Service Planner Portfolio</h1>
-        <p>From Ideation to Execution</p>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a Service Planner with 2+ years of experience in card app design and AI-driven product management. I specialize in creating user-centered designs and validating ideas through data analysis.</p>
-        <p>Key skills include wireframing, user journey mapping, SQL (SQLD Certified), and AI product management.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>Card App Redesign</h3>
-            <p>Improved user retention by 30% through a complete redesign of the card app interface, enhancing usability and accessibility.</p>
-        </article>
-        <article>
-            <h3>AI Recommendation System</h3>
-            <p>Designed and implemented a personalized product recommendation system, leveraging SQL and predictive analytics to increase sales by 20%.</p>
-        </article>
-        <article>
-            <h3>Seasonal Product Analysis</h3>
-            <p>Analyzed seasonal product trends and successfully validated hypotheses through sales experiments on Coupang and Naver Smart Store.</p>
-        </article>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to collaborate or learn more, feel free to reach out!</p>
-        <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Your Name | All Rights Reserved</p>
-    </footer>
+    <div class="team-container">
+        <div class="team-header">
+            <h1>Meet Our Team</h1>
+            <p>Just take a look - each member of the team is watching your every gesture and will hear your every whisper.</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <a href="member1.html">
+                    <img src="https://via.placeholder.com/250" alt="Amanda Fisher">
+                    <div class="team-member-content">
+                        <h3>Amanda Fisher</h3>
+                        <p>Insert your title here</p>
+                        <div class="social-icons">
+                            <a href="#">✔️</a>
+                            <a href="#">🎤</a>
+                            <a href="#">📧</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="team-member">
+                <a href="member2.html">
+                    <img src="https://via.placeholder.com/250" alt="Mike Cannon">
+                    <div class="team-member-content">
+                        <h3>Mike Cannon</h3>
+                        <p>Insert your title here</p>
+                        <div class="social-icons">
+                            <a href="#">✔️</a>
+                            <a href="#">🎤</a>
+                            <a href="#">📧</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="team-member">
+                <a href="member3.html">
+                    <img src="https://via.placeholder.com/250" alt="Erika Gofas">
+                    <div class="team-member-content">
+                        <h3>Erika Gofas</h3>
+                        <p>Insert your title here</p>
+                        <div class="social-icons">
+                            <a href="#">✔️</a>
+                            <a href="#">🎤</a>
+                            <a href="#">📧</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="team-member">
+                <a href="member4.html">
+                    <img src="https://via.placeholder.com/250" alt="Scott Beer">
+                    <div class="team-member-content">
+                        <h3>Scott Beer</h3>
+                        <p>Insert your title here</p>
+                        <div class="social-icons">
+                            <a href="#">✔️</a>
+                            <a href="#">🎤</a>
+                            <a href="#">📧</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="team-member">
+                <a href="member5.html">
+                    <img src="https://via.placeholder.com/250" alt="Ivanna Drian">
+                    <div class="team-member-content">
+                        <h3>Ivanna Drian</h3>
+                        <p>Insert your title here</p>
+                        <div class="social-icons">
+                            <a href="#">✔️</a>
+                            <a href="#">🎤</a>
+                            <a href="#">📧</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="team-member">
+                <a href="member6.html">
+                    <img src="https://via.placeholder.com/250" alt="Pevinna Summer">
+                    <div class="team-member-content">
+                        <h3>Pevinna Summer</h3>
+                        <p>Insert your title here</p>
+                        <div class="social-icons">
+                            <a href="#">✔️</a>
+                            <a href="#">🎤</a>
+                            <a href="#">📧</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
